@@ -78,7 +78,7 @@ if __name__ == "__main__":
 
     print("loading model...")
     device = args.device
-    if device == None:
+    if device is None:
         device = "cuda" if torch.cuda.is_available() else "cpu"
 
     model = get_model("mdx_extra_q", None)

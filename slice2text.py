@@ -56,7 +56,7 @@ if __name__ == "__main__":
     audio_dir = args.pop("audio_dir")
     if not os.path.isdir(audio_dir):
         print(audio_dir + " is not a directory")
-        exit()
+        exit(1)
     
     device = args.pop("device")
     num_devices = len(device)
